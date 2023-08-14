@@ -1,0 +1,259 @@
+{
+	"info": {
+		"_postman_id": "e20e03ae-3b6d-4c01-ae20-a7dfde212f57",
+		"name": "WebDevCourse_FirstRESTAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET all article",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "Jack Bauer",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "content",
+							"value": "There are two hands that can beat a royal flush. Jack Bauer's right hand and Jack Bauer's left hand.",
+							"type": "default",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/articles",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"articles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ONE article",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "Jack Bauer",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "content",
+							"value": "There are two hands that can beat a royal flush. Jack Bauer's right hand and Jack Bauer's left hand.",
+							"type": "default",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/articles/Test1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"articles",
+						"Test1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST article",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "Test1",
+							"type": "default"
+						},
+						{
+							"key": "content",
+							"value": "There are two hands that can beat a royal flush. Jack Bauer's right hand and Jack Bauer's left hand.",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/articles",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"articles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT article (update)",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "Test23",
+							"type": "default"
+						},
+						{
+							"key": "content",
+							"value": "There are two hands that can beat a royal flush. Jack Bauer's right hand and Jack Bauer's left hand.",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/articles/Test22",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"articles",
+						"Test22"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH article (update only 1 field)",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "Test23",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "content",
+							"value": "new content using patch",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/articles/Test23",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"articles",
+						"Test23"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE all article",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "Jack Bauer",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "content",
+							"value": "There are two hands that can beat a royal flush. Jack Bauer's right hand and Jack Bauer's left hand.",
+							"type": "default",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/articles",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"articles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE ONE article",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "Jack Bauer",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "content",
+							"value": "There are two hands that can beat a royal flush. Jack Bauer's right hand and Jack Bauer's left hand.",
+							"type": "default",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/articles/Test23",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"articles",
+						"Test23"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
